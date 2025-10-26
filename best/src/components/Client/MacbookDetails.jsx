@@ -18,7 +18,7 @@ const MacbookDetails = () => {
   };
 
       //BACKENED URL AFTER DEPLOYMENT
-  const API_URL = "https://bestcarstkpush.onrender.com/stkpush";
+  const API_URL = "https://bestcartstkpush-server.onrender.com";
 
   const handleAddToCart = () => {
     addToCart(product);
