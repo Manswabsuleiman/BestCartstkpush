@@ -42,7 +42,7 @@ const ChatWidget = () => {
 
   useEffect(() => {
     // ✅ Initialize socket inside useEffect
-    socketRef.current = io("http://localhost:8080", {
+    socketRef.current = io("https://bestcartstkpush-server.onrender.com", {
       reconnection: true,
     });
 
