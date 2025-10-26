@@ -6,27 +6,34 @@ import cors from "cors";
 // Environment
 const PORT = process.env.PORT || 8080;
 const FRONTEND_URLS = [
-  "http://localhost:5173",                     // Local dev
-  "https://bestcart-deliveries.onrender.com"  // Deployed frontend
+  "http://localhost:5173",              // Local dev
+  "https://bestcart-client.onrender.com" // Deployed frontend
 ];
 
 const app = express();
+
+// CORS middleware
 app.use(cors({
   origin: FRONTEND_URLS,
   methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true,
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const server = http.createServer(app);
 
+// Socket.IO server with same CORS settings
 const io = new Server(server, {
   cors: {
     origin: FRONTEND_URLS,
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
+// Chat logic
 const conversations = new Map();
 
 io.on("connection", (socket) => {
@@ -64,7 +71,7 @@ io.on("connection", (socket) => {
   });
 });
 
-// Basic test route
+// Test route
 app.get("/", (req, res) => {
   res.send("Backend server is running!");
 });
@@ -73,4 +80,5 @@ app.get("/", (req, res) => {
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
