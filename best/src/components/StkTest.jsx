@@ -14,7 +14,7 @@ const StkTest = () => {
 
     try {
       const res = await fetch(
-        "https://proarmy-tammara-thermogenic.ngrok-free.dev/stk", // your backend route
+        "https://bestcarstkpush.onrender.com/stk", // your backend route
         {
           method: "POST",
           headers: {
