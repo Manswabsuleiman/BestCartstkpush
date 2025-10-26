@@ -20,7 +20,7 @@ const PS5 = () => {
   };
 
   // ✅ Replace with your actual Ngrok backend URL
-  const API_URL = "https://proarmy-tammara-thermogenic.ngrok-free.dev/stkpush";
+  const API_URL = "https://bestcarstkpush.onrender.com/stkpush";
 
   const handleAddToCart = () => {
     addToCart(product);
