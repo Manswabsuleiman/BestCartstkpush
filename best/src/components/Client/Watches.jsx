@@ -6,7 +6,7 @@ const Watches = () => {
   const navigate = useNavigate();
 
   // ✅ Replace this link with your actual Ngrok HTTPS URL
-  const API_URL = "https://bestcarstkpush.onrender.com/stkpush";
+  const API_URL = "https://bestcartstkpush-server.onrender.com";
 
   const handleBuyNow = async (price) => {
     try {
