@@ -6,7 +6,7 @@ const Watches = () => {
   const navigate = useNavigate();
 
   // ✅ Replace this link with your actual Ngrok HTTPS URL
-  const API_URL = "https://proarmy-tammara-thermogenic.ngrok-free.dev/stkpush";
+  const API_URL = "https://bestcarstkpush.onrender.com/stkpush";
 
   const handleBuyNow = async (price) => {
     try {
