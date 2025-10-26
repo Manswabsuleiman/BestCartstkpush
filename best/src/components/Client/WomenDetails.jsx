@@ -10,7 +10,7 @@ const WomenDetails = () => {
   const navigate = useNavigate();
 
   // 🩷 Replace this with your actual ngrok or live backend link
-  const BACKEND_URL = "https://bestcarstkpush.onrender.com/stkpush";
+  const BACKEND_URL = "https://bestcartstkpush-server.onrender.com";
 
   const products = [
     { id: 1, img: "/Pictures/Classic1.png", name: "Floral Dress", price: "KSh 2,500" },
