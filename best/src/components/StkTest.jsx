@@ -14,7 +14,7 @@ const StkTest = () => {
 
     try {
       const res = await fetch(
-        "https://bestcarstkpush.onrender.com/stkpush", // your backend route
+        "https://bestcartstkpush-server.onrender.com", // your backend route
         {
           method: "POST",
           headers: {
