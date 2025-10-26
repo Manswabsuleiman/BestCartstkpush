@@ -84,7 +84,7 @@ app.post("/stkpush", generateToken, async (req, res) => {
       PartyA: formattedPhone,
       PartyB: shortCode,
       PhoneNumber: formattedPhone,
-      CallBackURL: "https://proarmy-tammara-thermogenic.ngrok-free.dev/stk_callback",
+      CallBackURL: "https://bestcartstkpush-server.onrender.com/stk_callback",
       AccountReference: "Test",
       TransactionDesc: "Testing STK Push",
     };
@@ -138,3 +138,4 @@ app.post("/stk_callback", (req, res) => {
 app.listen(PORT, () => {
   console.log(` Server running at http://localhost:${PORT}`);
 });
+
