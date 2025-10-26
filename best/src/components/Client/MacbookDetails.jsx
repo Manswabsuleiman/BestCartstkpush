@@ -18,7 +18,7 @@ const MacbookDetails = () => {
   };
 
       //BACKENED URL AFTER DEPLOYMENT
-  const API_URL = "https://proarmy-tammara-thermogenic.ngrok-free.dev/stkpush";
+  const API_URL = "https://bestcarstkpush.onrender.com";
 
   const handleAddToCart = () => {
     addToCart(product);
